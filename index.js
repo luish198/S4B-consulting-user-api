@@ -10,7 +10,7 @@ import { userRoutes} from './routes/index.js';
 
 
 dotenv.config();
-const PORT = process.env.PORT || 5000;
+const port = process.env.PORT || 5000;
 
 const app = express();
 
@@ -46,7 +46,7 @@ connectToDatabase().then((error) => {
         console.log(error)
         return process.exit(1)
     }
-    app.listen(PORT, () => {
-        console.log(`Server is running on port http://localhost:${PORT}`)
+    app.listen(process.env.PORT, () => {
+        console.log(`Server is running on port http://localhost:${port}`)
     })
 })

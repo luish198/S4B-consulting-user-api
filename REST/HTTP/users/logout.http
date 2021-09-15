@@ -1,1 +1,2 @@
-GET http://localhost:5000/users/logout
+//GET http://localhost:5000/users/logout
+GET https://s4b-consulting-user-api.herokuapp.com/users/logout
