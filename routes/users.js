@@ -6,6 +6,7 @@ import {
     me,
     checkSession,
 } from "../controllers/users.js"
+
 import isLoggedIn from '../middlewares/isLoggedIn.js';
 
 const userRoutes = Router();
